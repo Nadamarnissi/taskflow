@@ -30,11 +30,27 @@
     margin: 0;
 }
 
+/* item modifié selon les specs */
 .item {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 6px 0;
+    padding: 6px 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    color: inherit;
+    transition: background 0.2s ease;
+}
+
+.item:hover {
+    background: #f3f4f6;
+}
+
+/* item actif */
+.active {
+    background: #d1fae5;   /* vert clair */
+    color: #065f46;        /* vert foncé */
+    font-weight: 600;
 }
 
 .dot {
